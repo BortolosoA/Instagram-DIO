@@ -1,0 +1,156 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(243, 243, 243);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.instWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 60%;
+    height: 100vh;
+}
+
+.instPhone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.instPhone img {
+    height: 50rem;
+}
+
+.instLog {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 50%;
+    min-height: 34rem;
+}
+
+.group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 1.3rem;
+    border: 1px solid lightgray;
+}
+
+.group:nth-child(1) {
+    min-height: 19rem;
+}
+.instLogo {
+height: 3rem;
+}
+
+.instProfile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.instProfile img {
+    height: 7rem;
+}
+
+.logIn {
+    background-color: #0095f6;
+    color: white;
+    padding: 8px;
+    border-radius: 9px;
+}
+
+.logOut {
+    color: #0095f6;
+    margin-top: 1rem;
+}
+
+.notAcc {
+    color: rgb(131, 129, 129);
+}
+
+.link-blue {
+    color: #0095f6;
+}
+
+.getApp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem;
+}
+
+.download {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2rem;
+}
+
+.appDownload {
+    height: 4rem;
+    width: 10rem;
+    background-size: cover;
+}
+
+.appDownload:nth-child(1) {
+    background-image: url('./img/applebt.png');
+}
+
+.appDownload:nth-child(2) {
+    background-image: url('./img/androidbt.png');
+}
+
+/*Media Queries*/
+
+@media (max-width:1024px){
+    .instWrapper{
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px) {
+    body{
+        background-color: #ffffff;
+    }
+    
+    .instWrapper {
+        width: 90%;
+    }
+
+    .instPhone{
+        display: none;
+    }
+    .instLog{
+        width: 100%;
+    }
+
+    .group{
+        border: 1px solid transparent;        
+    }
+}
